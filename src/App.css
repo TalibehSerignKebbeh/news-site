@@ -1,5 +1,188 @@
+body {
+    background-color: white;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 500px;
+    margin: 10px auto;
+}
+form h1 {
+    text-align: center;
+    color: black;
+}
+form {
+    background-color: white;
+    padding: 30px;
+}
+#content{
+  color: #282c34;
+  font-size: 1.2rem;
+      border: 1px solid #ccc;
+      padding: 3px;
+}
+form .input-group {
+    margin-bottom: 15px;
+}
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+form input {
+    padding: 8px 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.submit-btn {
+    width: 100%;
+    border: none;
+    background: rgb(37, 83, 3);
+    font-size: 18px;
+    color: white;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+/* navbar css */
+#ul-wrapper{
+  background-color: inherit;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin: auto;
+  padding: 20px auto;
+ }
+ #links-ul{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin: auto;
+ }
+.nav-links-main-wrapperr{
+  width: 100% !important;
+  height: auto !important;
+  position: relative;
+  border: 1px solid brown;
+}
+.nav-links-main-wrapperr>ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  background-color: aquamarine;
+}
+#active-menu::after{
+    /* border-bottom: 2px solid red !important; */
+    content: '';
+    position: relative;
+    width: 100% !important;
+    height: 2px;
+    display: block;
+    /* color: #008000 !important; */
+    top: auto;
+    bottom: -7px;
+    background-color: red !important;
+  }
+
+/* end navbar styles */
+
+
+.sidebar {
+  box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+}
+.nav-item,
+.navbar {
+  z-index: 10000;
+}
+ .articleCard{
+    width: 16rem !important;
+  }
+@media  screen and (max-width:767px) {
+  .sidebar{
+    z-index: 10000000;
+  }
+  .articleCard{
+    width: 10rem !important;
+  }
+  
+  .nav-links-main-wrapper{
+    display: inline-block !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 0 !important;
+    width: 100% !important;
+    z-index: 3 !important;
+    position: fixed !important;  
+    background-color: #282c34 !important;
+    overflow: hidden !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+  .nav-links-main-wrapper.active{
+    height: 100% !important;
+  }
+  #closer, #opener{
+    right: 14px !important;
+    font-size: 3rem !important;
+  }
+#opener{
+  font-size: 2rem !important;
+  right: 10px !important;
+}
+  #links-ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    top: 20%;
+    color: #fff;
+  }
+}
+
+.e-dlg-center-center, .e-quick-popup-wrapper.e-device{
+  z-index: 1000000 !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* color-picker style  */
+
+ #preview {
+  background: transparent
+    url('https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png')
+    no-repeat;
+  display: inline-block;
+  height: 80px;
+  margin: 10px 0;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #008000;
+}
+
+.e-input-group:not(.e-float-icon-left), .e-input-group.e-success:not(.e-float-icon-left), .e-input-group.e-warning:not(.e-float-icon-left), .e-input-group.e-error:not(.e-float-icon-left), .e-input-group.e-control-wrapper:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left){
+  border: none;
+}
+
+
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {

@@ -1,0 +1,104 @@
+
+.my-shadow{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px !important;
+}
+.the-shadow{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.commentCard{
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px !important; 
+}
+.articleTitle{
+    font-size: .8rem !important;
+    text-transform: capitalize;
+}
+.category-desc{
+    margin-left: 0px;
+    margin-top: 0px;
+    border-radius: 2px;
+    background-color: rgb(90, 16, 16);
+    color: white;
+    padding: 1px 2px;
+    margin-bottom: auto;
+    position: absolute;
+}
+.commentParag{
+    font-size: 1rem !important;
+}
+.grid-container,.article-grid {
+    /* margin: 20px 30px; */
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    overflow: unset;
+    /* align-tracks: unset; */
+    /* overscroll-behavior-y: contain; */
+    overflow-y: inherit;
+    overflow-x: hidden;
+    /* grid-auto-columns: 25%; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    /* row-gap: 3%; */
+    /* grid-template-columns: auto auto auto auto; */
+    /* grid-template-rows: auto auto auto auto; */
+    /* grid-template-rows: max-content; */
+    /* grid-auto-flow: dense; */
+    /* place-items: start end; */
+    /* place-content: end center; */
+    /* grid-area: 250px; */
+    /* background-color: aliceblue; */
+    box-shadow: inset(0 0 0 0);
+    /* text-align: center; */
+}
+
+.grid-item {
+    grid-area: span 1;
+    /* height: auto; */
+    /* padding: 40px; */
+    /* background-color: blanchedalmond; */
+    height: fit-content !important;
+    /* height: 100px; */
+    /* width: 250px; */
+    /* grid-area: auto; */
+}
+
+.main-grid-item {
+    grid-area: auto / span 2 / span 2 !important;
+    /* width: 900px; */
+    /* width: -moz-fit-content;
+    width: fit-content; */
+    /* width: 75%; */
+    
+}
+
+
+@media (max-width:1024px) {
+
+}
+
+@media (max-width:480px) {
+    .grid-container, .article-grid {
+        position: relative;
+        /* top: 20px; */
+        margin: 60px 50px;
+        /* padding: 200px; */
+        gap: 6px;
+        background-color: orange;
+    grid-template-columns: repeat(2, 40%) !important;
+        /* grid-template-columns: auto auto; */
+        /* grid-template-rows: auto auto; */
+    }
+
+    .grid-item {
+        grid-column: auto !important;
+        margin: 0 5px 0 5px;
+    }
+
+    .main-grid-item {
+        grid-row-end: span auto;
+        /* grid-column-end:span 2; */
+        grid-column-end: span 2;
+        /* grid-row: span 4; */
+    }
+}
